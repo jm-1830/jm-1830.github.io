@@ -4,9 +4,32 @@
 
 <head>
 
+    <style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: grey
+        }
+
+        tr:nth-child(odd) {
+            background-color: black;
+        }
+        </style>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <title>Business 2</title>
 
@@ -16,8 +39,12 @@
     <!-- Custom CSS: You can use this stylesheet to override any Bootstrap styles and/or apply your own styles -->
     <link href="css/custom.css" rel="stylesheet">
 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
     <!-- Custom Fonts from Google -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -46,21 +73,21 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">Book Now</a>
+                        <a href="bookingpage.html">Book Now</a>
                     </li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Additional Options<span class="caret"></span></a>
 						<ul class="dropdown-menu" aria-labelledby="about-us">
-							<li><a href="#">Flight Schedules</a></li>
-							<li><a href="#">Frequent Flyer Program</a></li>
-							<li><a href="#">Careers</a></li>
+							<li><a href="schedules.html">Flight Schedules</a></li>
+							<li><a href="frequentflyerprogram.html">Frequent Flyer Program</a></li>
+							<li><a href="careers.html">Careers</a></li>
 						</ul>
 					</li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </li>
                 </ul>
                 
@@ -100,115 +127,99 @@
 	<!-- Content 3 -->
 	<!-- Footer -->
     <footer class="page-footer">
-   
-				<h2 class="section-heading">Flight Schedule</h2>
-					
-				<table class="fixed_headers">
-	<center>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Color</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Apple</td>
-      <td>Red</td>
-      <td>These are red.</td>
-    </tr>
-    <tr>
-      <td>Pear</td>
-      <td>Green</td>
-      <td>These are green.</td>
-    </tr>
-    <tr>
-      <td>Grape</td>
-      <td>Purple / Green</td>
-      <td>These are purple and green.</td>
-    </tr>
-    <tr>
-      <td>Orange</td>
-      <td>Orange</td>
-      <td>These are orange.</td>
-    </tr>
-    <tr>
-      <td>Banana</td>
-      <td>Yellow</td>
-      <td>These are yellow.</td>
-    </tr>
-    <tr>
-      <td>Kiwi</td>
-      <td>Green</td>
-      <td>These are green.</td>
-    </tr>
-    <tr>
-      <td>Plum</td>
-      <td>Purple</td>
-      <td>These are Purple</td>
-    </tr>
-    <tr>
-      <td>Watermelon</td>
-      <td>Red</td>
-      <td>These are red.</td>
-    </tr>
-    <tr>
-      <td>Tomato</td>
-      <td>Red</td>
-      <td>These are red.</td>
-    </tr>
-    <tr>
-      <td>Cherry</td>
-      <td>Red</td>
-      <td>These are red.</td>
-    </tr>
-    <tr>
-      <td>Cantelope</td>
-      <td>Orange</td>
-      <td>These are orange inside.</td>
-    </tr>
-    <tr>
-      <td>Honeydew</td>
-      <td>Green</td>
-      <td>These are green inside.</td>
-    </tr>
-    <tr>
-      <td>Papaya</td>
-      <td>Green</td>
-      <td>These are green.</td>
-    </tr>
-    <tr>
-      <td>Raspberry</td>
-      <td>Red</td>
-      <td>These are red.</td>
-    </tr>
-    <tr>
-      <td>Blueberry</td>
-      <td>Blue</td>
-      <td>These are blue.</td>
-    </tr>
-    <tr>
-      <td>Mango</td>
-      <td>Orange</td>
-      <td>These are orange.</td>
-    </tr>
-    <tr>
-      <td>Passion Fruit</td>
-      <td>Green</td>
-      <td>These are green.</td>
-    </tr>
-  </tbody>
-</table>
-					</center>
+    
+    	<!-- Contact Us -->
+        <div class="contact">
+        	<div class="container">
+				<h2 class="section-heading">Flight Schedules, Tracker, and Delays</h2>
+                <table>
+                    <tr>
+                      <th>Flight</th>
+                      <th>Dates</th>
+                      <th>Class</th>
+                    </tr>
+                    <tr>
+                      <td>Little Rock to Atlanta</td>
+                      <td>Mon-Wed</td>
+                      <td>Coach, Business Class</td>
+                    </tr>
+                    <tr>
+                      <td>Austin to Baton Rouge</td>
+                      <td>Thurs-Sat</td>
+                      <td>Coach, Business Class</td>
+                    </tr>
+                    <tr>
+                      <td>Oklahoma City to Jefferson City</td>
+                      <td>Mon-Wed</td>
+                      <td>Coach, Buisness Class</td>
+                    </tr>
+                    <tr>
+                      <td>Nashville to Jackson</td>
+                      <td>Thurs-Sat</td>
+                      <td>Coach, Buisness Class</td>
+                    </tr>
+                    <tr>
+                      <td>Montgomery to Tallahassee</td>
+                      <td>Mon-Wed</td>
+                      <td>Coach, Buisness Class</td>
+                    </tr>
+                    <tr>
+                      <td>Raleigh to Columbia</td>
+                      <td>Thurs-Sat</td>
+                      <td>Coach, Business Class</td>
+                    </tr>
+                    <tr>
+                      <td>Richmond to Charleston</td>
+                      <td>Mon-Wed</td>
+                      <td>Coach, Business Class</td>
+                    </tr>
+                      <td>Any Destination, Any Time</td>
+                      <td>Anytime</td>
+                      <td>Elite Luxury Class</td>
+                  </table>
+                  <hr>
+                  <table>
+                      <tr>
+                          <th>Price</th>
+                          <th>Flight Type</th>
+                      </tr>
+                      <td>$100</td>
+                      <td>One Way, Coach</td>
+                    </tr>
+                    <tr>
+                        <td>$200</td>
+                        <td>Roundtrip, Coach</td>
+                    </tr>
+                    <tr>
+                        <td>$400</td>
+                        <td>One Way, Business Class</td>
+                    </tr>
+                    <tr>
+                        <td>$600</td>
+                        <td>Roundtrip, Business Class</td>
+                    </tr>
+                    <tr>
+                        <td>$800</td>
+                        <td>One Way or Roundtrip, Elite Luxury Class</td>
+                    </tr>
+                  </table>
+                  
+        	</div>
+        </div>
         	
         <!-- Copyright etc -->
 		<div class=container>
 			<h1>Follow Us!</h1>
         <div class="small-print">
-		<img src="instagram.png" width="200" height=200>
-		<img src="twitter.png" witdth=200 height=200>
-		<img src="facebook.png" width=200 height=200>
+            <a href=instagram.com>
+        <img src="instagram.png" width="200" height=200>
+                </a>
+                <a href=twitter.com>
+        <img src="twitter.png" witdth=200 height=200>
+                    </a>
+                    <a href=facebook.com>
+        <img src="facebook.png" width=200 height=200>
+        </a>
         	<div class="container">
         		<p>Copyright &copy; Southern Breeze Airways 2020</p>
         	</div>
